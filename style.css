@@ -1,7 +1,7 @@
 header {
     height: 80px;
     width: 100%;
-    background-color: orange;
+    background-color: rgb(255, 115, 0);
     display: flex;
     justify-content: center;
 }
@@ -24,7 +24,14 @@ main {
 footer {
     height: 80px;
     width: 100%;
-    background-color: orange;
+    background-color: rgb(255, 115, 0);
     display: flex;
     justify-content: center;
+}
+
+.footer_content {
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
