@@ -3,10 +3,9 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .content_Wrapper {
-    display: flex;
     max-width: 1920px;
+    width: 100%;
 }

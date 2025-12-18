@@ -3,10 +3,21 @@ header {
     width: 100%;
     background-color: orange;
     display: flex;
+    justify-content: center;
+}
+
+.header_Content {
+    height: 80px;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 main {
     display: flex;
+    justify-content: center;
     flex: 1;
 }
 
@@ -15,4 +26,5 @@ footer {
     width: 100%;
     background-color: orange;
     display: flex;
+    justify-content: center;
 }
