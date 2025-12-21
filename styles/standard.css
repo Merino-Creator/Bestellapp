@@ -3,9 +3,22 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: palanquin;
 }
 
 .content_wrapper {
     max-width: 1920px;
     width: 100%;
+}
+
+h2 {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
 }

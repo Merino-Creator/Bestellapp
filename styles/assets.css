@@ -1,3 +1,9 @@
+/* Font */
+@font-face {
+  font-family: palanquin;
+  src: url(/assets/fonts/Palanquin/Palanquin-Regular.ttf);
+}
+
 /* Burger Menu*/
 .burger_menu {
   display: inline-block;

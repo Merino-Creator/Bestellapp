@@ -75,11 +75,33 @@ main {
 .dishes_container {
     background-color: rgb(253, 234, 220);
     height: 140px;
-    width: 560px;
+    width: 700px;
     border-radius: 16px;
     margin-left: 40px;
     display: flex;
     align-items: center;
+    gap: 12px;
+}
+
+.dishes_content {
+    height: 120px;
+    width: 100%;
+    padding-right: 12px;
+    align-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dishes_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.dishes_btn {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* Footer */
