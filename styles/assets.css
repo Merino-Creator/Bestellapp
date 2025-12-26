@@ -43,3 +43,17 @@
   height: 32px;
   margin: 4px 5px;
 }
+
+/* Shopping Cart */
+#basket {
+  background-color: rgb(54, 53, 52);
+  color: rgb(253, 234, 220);
+  height: 800px;
+  width: 430px;
+  text-align: center;
+}
+
+.basket_img {
+  height: 120px;
+  width: 120px;
+}
