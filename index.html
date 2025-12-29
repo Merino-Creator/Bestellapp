@@ -14,7 +14,7 @@
 <body>
 
     <header>
-        <div class="content_wrapper">
+        <div class="header_wrapper">
             <div class="header_content">
                 <div><img src="/assets/imgs/mainLogo.png" alt="Bestellapp Logo"></div>
                 <div class="burger_menu" onclick="myFunction(this)">
@@ -28,221 +28,228 @@
 
     <main>
         <div class="content_wrapper">
-            <section id="topSection">
-                <div class="hero_img"></div>
-                <div class="restaurant_logo"></div>
-                <h1><span style="color: rgb(255, 115, 0);">Burger</span>House <img id="ratingImg" src="/assets/icons/Rating.png" alt="restaurant rating"></h1>
-                <h4>The greatest Burgers, Pizzas and Salads just for you.</h4>
-            </section>
+            <div id="pageContent">
+                <section id="topSection">
+                    <div class="hero_img"></div>
+                    <div class="restaurant_logo"></div>
+                    <h1><span style="color: rgb(255, 115, 0);">Burger</span>House <img id="ratingImg"
+                            src="/assets/icons/Rating.png" alt="restaurant rating"></h1>
+                    <h4>The greatest Burgers, Pizzas and Salads just for you.</h4>
+                </section>
 
-            <section id="basket">
-                <h3>Your Basket</h3>
-                <div id="products">
-                    <p>Nothing here yet.<br>
-                    Go ahead and choose something delicious!</p>
-                </div>
-                <img class="basket_img" src="/assets/imgs/shopping_cart.png" alt="">
-            </section>
+                <section id="menuPartOne">
+                    <div class="menuline">
+                        <img class="menu_icon" src="/assets/imgs/smallBurger.png" alt="small burger picture">
+                        <h2>Burger & Sandwiches<h2>
+                    </div>
 
-            <section id="menuPartOne">
-                <div class="menuline">
-                    <img class="menu_icon" src="/assets/imgs/smallBurger.png" alt="small burger picture">
-                    <h2>Burger & Sandwiches<h2>
-                </div>
-
-                <div class="menu_content">
-                    <div class="dishes_container">
-                        <img class="menu_images" src="/assets/imgs/VeggieBurger.png" alt="">
-                        <div class="dishes_content">
-                            <div class="dishes_text">
-                                <h4>Veggie mushroom black bruger</h4>
-                                <p>Mixed green salad, Tomatoes, Edamame, Mushrooms</p>
+                    <div class="menu_content">
+                        <div class="dishes_container">
+                            <img class="menu_images" src="/assets/imgs/VeggieBurger.png" alt="">
+                            <div class="dishes_content">
+                                <div class="dishes_text">
+                                    <h4>Veggie mushroom black bruger</h4>
+                                    <p>Mixed green salad, Tomatoes, Edamame, Mushrooms</p>
+                                </div>
+                                <div class="dishes_btn">
+                                    <h4>16,90€</h4>
+                                    <button>add</button>
+                                </div>
                             </div>
-                            <div class="dishes_btn">
-                                <h4>16,90€</h4>
-                                <button>add</button>
+                        </div>
+
+                        <div class="dishes_container">
+                            <img class="menu_images" src="/assets/imgs/MeatBurger.png" alt="">
+                            <div class="dishes_content">
+                                <div class="dishes_text">
+                                    <h4>All meat burger</h4>
+                                    <p>Beef, Bacon, Dill pickles, Smoked cheese, Ketchup, BBQ sauce</p>
+                                </div>
+                                <div class="dishes_btn">
+                                    <h4>15,90€</h4>
+                                    <button>add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dishes_container">
+                            <img class="menu_images" src="/assets/imgs/RedBurger.png" alt="">
+                            <div class="dishes_content">
+                                <div class="dishes_text">
+                                    <h4>Beef red burger</h4>
+                                    <p>Beef, Cheese, Tomatoes, Lettuce, Onions</p>
+                                </div>
+                                <div class="dishes_btn">
+                                    <h4>14,90€</h4>
+                                    <button>add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dishes_container">
+                            <img class="menu_images" src="/assets/imgs/ChickenBurger.png" alt="">
+                            <div class="dishes_content">
+                                <div class="dishes_text">
+                                    <h4>Big Chicken Burger</h4>
+                                    <p>Chicken, Cheese, Tomatoes, Lettuce, Onions, Bell pepper</p>
+                                </div>
+                                <div class="dishes_btn">
+                                    <h4>15,90€</h4>
+                                    <button>add</button>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </section>
 
-                    <div class="dishes_container">
-                        <img class="menu_images" src="/assets/imgs/MeatBurger.png" alt="">
-                        <div class="dishes_content">
-                            <div class="dishes_text">
-                                <h4>All meat burger</h4>
-                                <p>Beef, Bacon, Dill pickles, Smoked cheese, Ketchup, BBQ sauce</p>
+                <section id="menuPartTwo">
+                    <div class="menuline">
+                        <img class="menu_icon" src="/assets/imgs/smallPizza.png" alt="small pizza picture">
+                        <h2>Pizza (30cm)<h2>
+                    </div>
+
+                    <div class="menu_content">
+                        <div class="dishes_container">
+                            <img class="menu_images" src="/assets/imgs/margherita.png" alt="">
+                            <div class="dishes_content">
+                                <div class="dishes_text">
+                                    <h4>Pizza Margherita</h4>
+                                    <p>Tomato sauce, Mozzarella</p>
+                                </div>
+                                <div class="dishes_btn">
+                                    <h4>11,90€</h4>
+                                    <button>add</button>
+                                </div>
                             </div>
-                            <div class="dishes_btn">
-                                <h4>15,90€</h4>
-                                <button>add</button>
+                        </div>
+
+                        <div class="dishes_container">
+                            <img class="menu_images" src="/assets/imgs/chorizo.png" alt="">
+                            <div class="dishes_content">
+                                <div class="dishes_text">
+                                    <h4>Pizza Chorizo</h4>
+                                    <p>Tomato slices, Mozzarella, Chorizo</p>
+                                </div>
+                                <div class="dishes_btn">
+                                    <h4>13,90€</h4>
+                                    <button>add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dishes_container">
+                            <img class="menu_images" src="/assets/imgs/funghi.png" alt="">
+                            <div class="dishes_content">
+                                <div class="dishes_text">
+                                    <h4>Pizza Funghi</h4>
+                                    <p>Red onions, Olives, Button mushrooms, Mozzarella</p>
+                                </div>
+                                <div class="dishes_btn">
+                                    <h4>12,90€</h4>
+                                    <button>add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dishes_container">
+                            <img class="menu_images" src="/assets/imgs/quattro.png" alt="">
+                            <div class="dishes_content">
+                                <div class="dishes_text">
+                                    <h4>Pizza Quattro Fromaggi with Chicken</h4>
+                                    <p>Chicken, Mozzarella, Gorgonzola, Fontina, Parmigiano Reggiano</p>
+                                </div>
+                                <div class="dishes_btn">
+                                    <h4>15,90€</h4>
+                                    <button>add</button>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </section>
 
-                    <div class="dishes_container">
-                        <img class="menu_images" src="/assets/imgs/RedBurger.png" alt="">
-                        <div class="dishes_content">
-                            <div class="dishes_text">
-                                <h4>Beef red burger</h4>
-                                <p>Beef, Cheese, Tomatoes, Lettuce, Onions</p>
+                <section id="menuPartThree">
+                    <div class="menuline">
+                        <img class="menu_icon" src="/assets/imgs/smallSalad.png" alt="small salad picture">
+                        <h2>Salad<h2>
+                    </div>
+
+                    <div class="menu_content">
+                        <div class="dishes_container">
+                            <img class="menu_images" src="/assets/imgs/beefSalad.png" alt="">
+                            <div class="dishes_content">
+                                <div class="dishes_text">
+                                    <h4>Warm beef arugula salad</h4>
+                                    <p>Beef, Arugula, Field salad, Greek feta, Cherry tomatoes, Sun-dried tomatoes,
+                                        Balsamic-vinegar dressing</p>
+                                </div>
+                                <div class="dishes_btn">
+                                    <h4>16,90€</h4>
+                                    <button>add</button>
+                                </div>
                             </div>
-                            <div class="dishes_btn">
-                                <h4>14,90€</h4>
-                                <button>add</button>
+                        </div>
+
+                        <div class="dishes_container">
+                            <img class="menu_images" src="/assets/imgs/miniGreen.png" alt="">
+                            <div class="dishes_content">
+                                <div class="dishes_text">
+                                    <h4>Mini green salad</h4>
+                                    <p>Green salad, Cucumber, Carrots, Parsley, Radishes</p>
+                                </div>
+                                <div class="dishes_btn">
+                                    <h4>7,90€</h4>
+                                    <button>add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dishes_container">
+                            <img class="menu_images" src="/assets/imgs/seafoodSalad.png" alt="">
+                            <div class="dishes_content">
+                                <div class="dishes_text">
+                                    <h4>Green salad with sea food</h4>
+                                    <p>Mixed greens, Cherry tomatoes, Red onion, Mussels, Squid rings, Shrimp, Dijon
+                                        mustard-lemon dressing with dill</p>
+                                </div>
+                                <div class="dishes_btn">
+                                    <h4>16,90€</h4>
+                                    <button>add</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dishes_container">
+                            <img class="menu_images" src="/assets/imgs/veganSalad.png" alt="">
+                            <div class="dishes_content">
+                                <div class="dishes_text">
+                                    <h4>Vegan green salad with tofu</h4>
+                                    <p>Green salad, Cherry tomatoes, Cucumber, Baby spinach, Edamame, Radishes,
+                                        Bittercress, Tofu, Peanuts</p>
+                                </div>
+                                <div class="dishes_btn">
+                                    <h4>14,90€</h4>
+                                    <button>add</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="dishes_container">
-                        <img class="menu_images" src="/assets/imgs/ChickenBurger.png" alt="">
-                        <div class="dishes_content">
-                            <div class="dishes_text">
-                                <h4>Big Chicken Burger</h4>
-                                <p>Chicken, Cheese, Tomatoes, Lettuce, Onions, Bell pepper</p>
-                            </div>
-                            <div class="dishes_btn">
-                                <h4>15,90€</h4>
-                                <button>add</button>
-                            </div>
-                        </div>
+                </section>
+            </div>
+            <div id="basketContent">
+                <section class="basket">
+                    <h3>Your Basket</h3>
+                    <div id="products">
+                        <p>Nothing here yet.<br>
+                            Go ahead and choose something delicious!</p>
                     </div>
-                </div>
-            </section>
-
-            <section id="menuPartTwo">
-                <div class="menuline">
-                    <img class="menu_icon" src="/assets/imgs/smallPizza.png" alt="small pizza picture">
-                    <h2>Pizza (30cm)<h2>
-                </div>
-
-                <div class="menu_content">
-                    <div class="dishes_container">
-                        <img class="menu_images" src="/assets/imgs/margherita.png" alt="">
-                        <div class="dishes_content">
-                            <div class="dishes_text">
-                                <h4>Pizza Margherita</h4>
-                                <p>Tomato sauce, Mozzarella</p>
-                            </div>
-                            <div class="dishes_btn">
-                                <h4>11,90€</h4>
-                                <button>add</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="dishes_container">
-                        <img class="menu_images" src="/assets/imgs/chorizo.png" alt="">
-                        <div class="dishes_content">
-                            <div class="dishes_text">
-                                <h4>Pizza Chorizo</h4>
-                                <p>Tomato slices, Mozzarella, Chorizo</p>
-                            </div>
-                            <div class="dishes_btn">
-                                <h4>13,90€</h4>
-                                <button>add</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="dishes_container">
-                        <img class="menu_images" src="/assets/imgs/funghi.png" alt="">
-                        <div class="dishes_content">
-                            <div class="dishes_text">
-                                <h4>Pizza Funghi</h4>
-                                <p>Red onions, Olives, Button mushrooms, Mozzarella</p>
-                            </div>
-                            <div class="dishes_btn">
-                                <h4>12,90€</h4>
-                                <button>add</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="dishes_container">
-                        <img class="menu_images" src="/assets/imgs/quattro.png" alt="">
-                        <div class="dishes_content">
-                            <div class="dishes_text">
-                                <h4>Pizza Quattro Fromaggi with Chicken</h4>
-                                <p>Chicken, Mozzarella, Gorgonzola, Fontina, Parmigiano Reggiano</p>
-                            </div>
-                            <div class="dishes_btn">
-                                <h4>15,90€</h4>
-                                <button>add</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="menuPartThree">
-                <div class="menuline">
-                    <img class="menu_icon" src="/assets/imgs/smallSalad.png" alt="small salad picture">
-                    <h2>Salad<h2>
-                </div>
-
-                <div class="menu_content">
-                    <div class="dishes_container">
-                        <img class="menu_images" src="/assets/imgs/beefSalad.png" alt="">
-                        <div class="dishes_content">
-                            <div class="dishes_text">
-                                <h4>Warm beef arugula salad</h4>
-                                <p>Beef, Arugula, Field salad, Greek feta, Cherry tomatoes, Sun-dried tomatoes, Balsamic-vinegar dressing</p>
-                            </div>
-                            <div class="dishes_btn">
-                                <h4>16,90€</h4>
-                                <button>add</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="dishes_container">
-                        <img class="menu_images" src="/assets/imgs/miniGreen.png" alt="">
-                        <div class="dishes_content">
-                            <div class="dishes_text">
-                                <h4>Mini green salad</h4>
-                                <p>Green salad, Cucumber, Carrots, Parsley, Radishes</p>
-                            </div>
-                            <div class="dishes_btn">
-                                <h4>7,90€</h4>
-                                <button>add</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="dishes_container">
-                        <img class="menu_images" src="/assets/imgs/seafoodSalad.png" alt="">
-                        <div class="dishes_content">
-                            <div class="dishes_text">
-                                <h4>Green salad with sea food</h4>
-                                <p>Mixed greens, Cherry tomatoes, Red onion, Mussels, Squid rings, Shrimp, Dijon mustard-lemon dressing with dill</p>
-                            </div>
-                            <div class="dishes_btn">
-                                <h4>16,90€</h4>
-                                <button>add</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="dishes_container">
-                        <img class="menu_images" src="/assets/imgs/veganSalad.png" alt="">
-                        <div class="dishes_content">
-                            <div class="dishes_text">
-                                <h4>Vegan green salad with tofu</h4>
-                                <p>Green salad, Cherry tomatoes, Cucumber, Baby spinach, Edamame, Radishes, Bittercress, Tofu, Peanuts</p>
-                            </div>
-                            <div class="dishes_btn">
-                                <h4>14,90€</h4>
-                                <button>add</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                    <img class="basket_img" src="/assets/imgs/shopping_cart.png" alt="">
+                </section>
+            </div>
         </div>
     </main>
 
     <footer>
-        <div class="content_wrapper">
+        <div class="footer_wrapper">
             <div class="footer_content">
                 <a href="#">&copy; 2025 Burger House</a>
                 <a href="#">Imprint</a>

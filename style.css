@@ -7,6 +7,11 @@ header {
     justify-content: center;
 }
 
+.header_wrapper {
+    max-width: 1920px;
+    width: 100%;
+}
+
 .header_content {
     height: 120px;
     margin-left: 120px;
@@ -21,6 +26,30 @@ main {
     display: flex;
     justify-content: center;
     flex: 1;
+}
+
+#pageContent {
+    width: calc(100% - 420px);
+}
+
+#basketContent {
+    width: 420px;
+    flex-grow: 1;
+}
+
+/* Basket */
+.basket {
+    gap: 40px;
+    padding-top: 40px;
+    border-radius: 24px 0 0 24px;
+    height: 800px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 /* Top Section */
@@ -51,19 +80,6 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-/* Basket */
-#basket {
-    gap: 40px;
-    padding-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 24px 0 0 24px;
-    position: fixed;
-    right: 0;
-    top: 120px;
 }
 
 /* Menu Section */
@@ -124,6 +140,11 @@ footer {
     background-color: rgb(255, 115, 0);
     display: flex;
     justify-content: center;
+}
+
+.footer_wrapper {
+    max-width: 1920px;
+    width: 100%;
 }
 
 .footer_content {
