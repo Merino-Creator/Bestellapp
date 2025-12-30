@@ -29,12 +29,19 @@ main {
 }
 
 #pageContent {
-    width: calc(100% - 420px);
+    display: grid;
+    grid-area: 1 / 1;
+    width: 100%;
 }
 
 #basketContent {
+    display: grid;
+    grid-area: 1 / 1;
+    z-index: 1;
     width: 420px;
-    flex-grow: 1;
+    position: sticky;
+    justify-self: end;
+    margin-top: 691px;
 }
 
 /* Basket */
