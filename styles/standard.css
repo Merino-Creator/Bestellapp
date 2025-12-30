@@ -12,6 +12,11 @@ body {
     display: grid;
 }
 
+.full_page {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
 h1 {
     margin: 0;
     font-size: 48px;

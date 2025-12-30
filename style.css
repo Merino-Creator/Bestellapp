@@ -42,6 +42,7 @@ main {
     position: sticky;
     justify-self: end;
     margin-top: 691px;
+    margin-right: calc(50% - 50vw);
 }
 
 /* Basket */
@@ -90,8 +91,14 @@ main {
 }
 
 /* Menu Section */
-.menuline {
+.menuline_full {
     background-color: rgb(255, 115, 0);
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-bottom: 40px;
+}
+
+.menuline_inner {
     color: white;
     padding-left: 160px;
     gap: 12px;
@@ -99,6 +106,9 @@ main {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
+    max-width: 1920px;
+    margin: 0 auto;
+
 }
 
 .menu_content {
