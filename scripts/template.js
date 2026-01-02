@@ -11,7 +11,7 @@ function getBurgerMenuTemplate(indexBurger) {
                 </div>
                 <div class="dishes_btn">
                     <h4>${burger.price.toFixed(2)}€</h4>
-                    <button>add</button>
+                    <button onclick="addToCart()">add</button>
                 </div>
             </div>
         </div>`
@@ -30,7 +30,7 @@ function getPizzaMenuTemplate(indexPizza) {
                 </div>
                 <div class="dishes_btn">
                     <h4>${pizza.price.toFixed(2)}€</h4>
-                    <button>add</button>
+                    <button onclick="addToCart()">add</button>
                 </div>
             </div>
         </div>`
@@ -49,7 +49,7 @@ function getSaladMenuTemplate(indexSalad) {
                 </div>
                 <div class="dishes_btn">
                     <h4>${salad.price.toFixed(2)}€</h4>
-                    <button>add</button>
+                    <button onclick="addToCart()">add</button>
                 </div>
             </div>
         </div>`
