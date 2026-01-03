@@ -11,7 +11,7 @@ function getBurgerMenuTemplate(indexBurger) {
                 </div>
                 <div class="dishes_btn">
                     <h4>${burger.price.toFixed(2)}€</h4>
-                    <button onclick="addToCart()">add</button>
+                    <button onclick="addToCart(${indexBurger}, 'burger')">add</button>
                 </div>
             </div>
         </div>`
@@ -30,7 +30,7 @@ function getPizzaMenuTemplate(indexPizza) {
                 </div>
                 <div class="dishes_btn">
                     <h4>${pizza.price.toFixed(2)}€</h4>
-                    <button onclick="addToCart()">add</button>
+                    <button onclick="addToCart(${indexPizza}, 'pizza')">add</button>
                 </div>
             </div>
         </div>`
@@ -49,8 +49,20 @@ function getSaladMenuTemplate(indexSalad) {
                 </div>
                 <div class="dishes_btn">
                     <h4>${salad.price.toFixed(2)}€</h4>
-                    <button onclick="addToCart()">add</button>
+                    <button onclick="addToCart(${indexSalad}, 'salad')">add</button>
                 </div>
             </div>
         </div>`
+}
+
+function getbasketItemTemplate(item, indexBasket) {
+    return `
+        <div class="basket_item">
+            <h5>${item.name}</h5>
+            <div class="amount_price">
+                <button onclick="removeFromBasket()">−</button>
+                <h5>${item.price.toFixed(2)}€</h5>
+            </div>
+        </div>
+    `;
 }

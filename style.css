@@ -124,6 +124,7 @@ main {
     width: 700px;
     border-radius: 16px;
     margin-left: 120px;
+    margin-right: 120px;
     display: flex;
     align-items: center;
     gap: 12px;

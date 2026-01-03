@@ -54,3 +54,21 @@
   height: 120px;
   width: 120px;
 }
+
+.basket_item {
+  width: 340px;
+  height: 100px;
+  background-color: rgb(253, 234, 220);
+  color: rgb(54, 53, 52);
+  border-radius: 12px;
+  padding: 12px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.amount_price {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}

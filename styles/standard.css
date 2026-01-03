@@ -38,7 +38,16 @@ h4 {
     font-size: 24px;
 }
 
+h5 {
+    font-size: 22px;
+    margin: 0;
+}
+
 p {
     margin: 0;
     font-size: 16px;
+}
+
+.d_none {
+    display: none;
 }
