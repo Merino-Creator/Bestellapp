@@ -11,7 +11,7 @@ function getBurgerMenuTemplate(indexBurger) {
                 </div>
                 <div class="dishes_btn">
                     <h4>${burger.price.toFixed(2)}€</h4>
-                    <button onclick="addToCart(${indexBurger}, 'burger')">add</button>
+                    <button class="btn" onclick="addToCart(${indexBurger}, 'burger')">Add to basket</button>
                 </div>
             </div>
         </div>`
@@ -30,7 +30,7 @@ function getPizzaMenuTemplate(indexPizza) {
                 </div>
                 <div class="dishes_btn">
                     <h4>${pizza.price.toFixed(2)}€</h4>
-                    <button onclick="addToCart(${indexPizza}, 'pizza')">add</button>
+                    <button class="btn" onclick="addToCart(${indexPizza}, 'pizza')">Add to basket</button>
                 </div>
             </div>
         </div>`
@@ -49,18 +49,22 @@ function getSaladMenuTemplate(indexSalad) {
                 </div>
                 <div class="dishes_btn">
                     <h4>${salad.price.toFixed(2)}€</h4>
-                    <button onclick="addToCart(${indexSalad}, 'salad')">add</button>
+                    <button class="btn" onclick="addToCart(${indexSalad}, 'salad')">Add to basket</button>
                 </div>
             </div>
         </div>`
 }
 
-function getbasketItemTemplate(item, indexBasket) {
+function getBasketItemTemplate(item, indexBasket) {
     return `
         <div class="basket_item">
             <h5>${item.name}</h5>
-            <div class="amount_price">
-                <button onclick="removeFromBasket()">−</button>
+            <div class="amount_price_container">
+                <div class="basket_quantity">
+                    <button class="basket_button" onclick="removeFromBasket()"><img src="/assets/icons/trashcan.png" alt="small trashcan"></button>
+                    <p>amount</p>
+                    <button class="basket_button" onclick="addMore()">+</button>
+                </div>
                 <h5>${item.price.toFixed(2)}€</h5>
             </div>
         </div>

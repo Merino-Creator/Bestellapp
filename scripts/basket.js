@@ -11,9 +11,6 @@ function addToCart(indexDish, category) {
     let item = dish[indexDish];
     basket.push(item);
 
-    let basketImg = document.getElementById('basketImage');
-    basketImg.classList.add("d_none");
-
     renderBasket();
 }
 
@@ -22,6 +19,12 @@ function renderBasket() {
     basketRef.innerHTML = "";
 
     for (let indexBasket = 0; indexBasket < basket.length; indexBasket++) {
-        basketRef.innerHTML += getbasketItemTemplate(basket[indexBasket], indexBasket);
+        basketRef.innerHTML += getBasketItemTemplate(basket[indexBasket], indexBasket);
     }
+
+    let basketImg = document.getElementById('basketImage');
+    basketImg.classList.add("d_none");
+
+    let basketSum = document.getElementById('basketSummary');
+    basketSum.classList.remove("d_none");
 }

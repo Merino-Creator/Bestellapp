@@ -55,6 +55,13 @@
   width: 120px;
 }
 
+#products {
+  max-height: 348px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
 .basket_item {
   width: 340px;
   height: 100px;
@@ -65,10 +72,58 @@
   text-align: start;
   display: flex;
   flex-direction: column;
+  margin-bottom: 12px;
 }
 
-.amount_price {
+.amount_price_container {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.basket_quantity {
+  display: flex;
+}
+
+.basket_button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+#basketSummary {
+  width: 340px;
+  text-align: start;
+}
+
+.sub_summary {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.seperation_bar {
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.btn {
+  background-color: white;
+  border-radius: 8px;
+  border: none;
+  width: 100px;
+  height: 20px;
+  cursor: pointer;
 }
