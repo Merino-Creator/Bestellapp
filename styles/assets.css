@@ -44,86 +44,23 @@
   margin: 4px 5px;
 }
 
-/* Shopping Cart */
-.basket {
-  background-color: rgb(54, 53, 52);
-  color: rgb(253, 234, 220);
-}
-
-.basket_img {
-  height: 120px;
-  width: 120px;
-}
-
-#products {
-  max-height: 408px;
-  display: flex;
-  flex-direction: column;
-  overflow: auto;
-}
-
-.basket_item {
-  width: 340px;
-  background-color: rgb(253, 234, 220);
-  color: rgb(54, 53, 52);
-  border-radius: 12px;
-  padding: 12px;
-  text-align: start;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 12px;
-  gap: 16px;
-}
-
-.amount_price_container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.basket_quantity {
-  display: flex;
-}
-
-.basket_button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 24px;
-}
-
-#basketSummary {
-  width: 340px;
-  text-align: start;
-}
-
-.sub_summary {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 8px;
-  margin-right: 8px;
-}
-
-.summary {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 8px;
-  margin-right: 8px;
-}
-
-.seperation_bar {
-  height: 2px;
-  width: 100%;
-  background-color: white;
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-
-.btn {
+.add_btn {
   background-color: white;
   border-radius: 8px;
   border: none;
   width: 100px;
   height: 20px;
   cursor: pointer;
+}
+
+/* Scrollbar */
+
+#products::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+
+#products::-webkit-scrollbar-thumb {
+  background-color: rgb(253, 234, 220);
+  border-radius: 8px;
 }

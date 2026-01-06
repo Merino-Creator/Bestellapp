@@ -11,7 +11,7 @@ function getBurgerMenuTemplate(indexBurger) {
                 </div>
                 <div class="dishes_btn">
                     <h4>${burger.price.toFixed(2)}€</h4>
-                    <button class="btn" onclick="addToCart(${indexBurger}, 'burger')">Add to basket</button>
+                    <button class="add_btn" onclick="addToCart(${indexBurger}, 'burger')">Add to basket</button>
                 </div>
             </div>
         </div>`
@@ -30,7 +30,7 @@ function getPizzaMenuTemplate(indexPizza) {
                 </div>
                 <div class="dishes_btn">
                     <h4>${pizza.price.toFixed(2)}€</h4>
-                    <button class="btn" onclick="addToCart(${indexPizza}, 'pizza')">Add to basket</button>
+                    <button class="add_btn" onclick="addToCart(${indexPizza}, 'pizza')">Add to basket</button>
                 </div>
             </div>
         </div>`
@@ -49,7 +49,7 @@ function getSaladMenuTemplate(indexSalad) {
                 </div>
                 <div class="dishes_btn">
                     <h4>${salad.price.toFixed(2)}€</h4>
-                    <button class="btn" onclick="addToCart(${indexSalad}, 'salad')">Add to basket</button>
+                    <button class="add_btn" onclick="addToCart(${indexSalad}, 'salad')">Add to basket</button>
                 </div>
             </div>
         </div>`
@@ -58,7 +58,9 @@ function getSaladMenuTemplate(indexSalad) {
 function getBasketItemTemplate(item, indexBasket) {
     return `
         <div class="basket_item">
-            <h5>${item.name}</h5>
+            <div>
+                <h5>${item.name}</h5>
+            </div>
             <div class="amount_price_container">
                 <div class="basket_quantity">
                     <button class="basket_button" onclick="removeFromBasket()"><img src="/assets/icons/trashcan.png" alt="small trashcan"></button>
