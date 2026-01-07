@@ -63,9 +63,9 @@ function getBasketItemTemplate(item, indexBasket) {
             </div>
             <div class="amount_price_container">
                 <div class="basket_quantity">
-                    <button class="basket_button" onclick="removeFromBasket()"><img src="/assets/icons/trashcan.png" alt="small trashcan"></button>
-                    <p>amount</p>
-                    <button class="basket_button" onclick="addMore()">+</button>
+                    <button class="basket_button" onclick="removeFromBasket(${indexBasket})"><img src="/assets/icons/trashcan.png" alt="small trashcan"></button>
+                    <h5>${item.amount}</h5>
+                    <button class="basket_button" onclick="addMore(${indexBasket})">+</button>
                 </div>
                 <h5>${item.price.toFixed(2)}€</h5>
             </div>

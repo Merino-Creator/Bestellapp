@@ -49,6 +49,8 @@
 
 .basket_quantity {
     display: flex;
+    align-items: flex-start;
+    gap: 2px;
 }
 
 .basket_button {

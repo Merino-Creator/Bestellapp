@@ -1,15 +1,25 @@
-function addToCart(indexDish, category) {
-    let dish = null;
-
-    for (let indexDish = 0; indexDish < dishes.length; indexDish++) {
-        if (dishes[indexDish][category]) {
-            dish = dishes[indexDish][category];
-            break;
+function getDishByCategory(category, indexDish) {
+    for (let i = 0; i < dishes.length; i++) {
+        if (dishes[i][category]) {
+            return dishes[i][category][indexDish];
         }
     }
+}
 
-    let item = dish[indexDish];
-    basket.push(item);
+function addToCart(indexDish, category) {
+    let selectedDish = getDishByCategory(category, indexDish);
+    let basketItem = basket.find(item => item.name === selectedDish.name);
+
+    if (basketItem) {
+        basketItem.amount++;
+    } else {
+        basket.push({
+            name: selectedDish.name,
+            price: selectedDish.price,
+            image: selectedDish.image,
+            amount: 1
+        });
+    }
 
     renderBasket();
 }
@@ -27,4 +37,14 @@ function renderBasket() {
 
     let basketSum = document.getElementById('basketSummary');
     basketSum.classList.remove("d_none");
+}
+
+function addMore(indexBasket) {
+    basket[indexBasket].amount++;
+    renderBasket();
+}
+
+function removeFromBasket(indexBasket) {
+    basket.splice(indexBasket, 1);
+    renderBasket();
 }
