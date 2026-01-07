@@ -58,8 +58,9 @@ function basketSummary() {
 
     let subtotal = basket.reduce((sum, item)=> sum + (item.price * item.amount), 0);
 
-    total = subtotal + deliveryFee;
+    let total = subtotal + deliveryFee;
 
     document.getElementById('subtotalAmount').innerText = subtotal.toFixed(2) + '€';
     document.getElementById('totalAmount').innerText = total.toFixed(2) + '€';
+    document.getElementById('buyButton').innerText = 'Buy now (' + total.toFixed(2) + '€)';
 }
