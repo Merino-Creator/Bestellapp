@@ -28,17 +28,19 @@ function renderBasket() {
     let basketRef = document.getElementById('products');
     basketRef.innerHTML = "";
 
-    for (let indexBasket = 0; indexBasket < basket.length; indexBasket++) {
-        basketRef.innerHTML += getBasketItemTemplate(basket[indexBasket], indexBasket);
+    let isEmpty = basket.length === 0;
+    let basketImg = document.getElementById('basketImage');
+    let basketSum = document.getElementById('basketSummary');
+
+    if (!isEmpty) {
+        for (let indexBasket = 0; indexBasket < basket.length; indexBasket++) {
+            basketRef.innerHTML += getBasketItemTemplate(basket[indexBasket], indexBasket);
+        }
+        basketSummary();
     }
 
-    let basketImg = document.getElementById('basketImage');
-    basketImg.classList.add("d_none");
-
-    let basketSum = document.getElementById('basketSummary');
-    basketSum.classList.remove("d_none");
-
-    basketSummary();
+    basketImg.classList.toggle("d_none", !isEmpty);
+    basketSum.classList.toggle("d_none", isEmpty);
 }
 
 function addMore(indexBasket) {
