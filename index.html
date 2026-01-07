@@ -100,10 +100,18 @@
                             <h5>Total</h5>
                             <h5 id="totalAmount">amount</h5>
                         </div>
-                        <button id="buyButton"></button>
+                        <button id="buyButton" onclick="sendOrder()"></button>
                     </div>
                 </section>
             </div>
+            <dialog id="orderDialog">
+                <div class="dialog_content">
+                    <button onclick="closeDialog()" id="closeDialogBtn">X</button>
+                    <img class="dialog_image" src="/assets/imgs/orderTruck.png" alt="">
+                    <p style="font-size: 42px;">Order confirmed!</p>
+                    <p style="font-size: 29px;">Your food is on the way!</p>
+                </div>
+            </dialog>
         </div>
     </main>
 

@@ -64,3 +64,27 @@ function basketSummary() {
     document.getElementById('totalAmount').innerText = total.toFixed(2) + '€';
     document.getElementById('buyButton').innerText = 'Buy now (' + total.toFixed(2) + '€)';
 }
+
+function sendOrder() {
+    let dialog = document.getElementById('orderDialog');
+
+    dialog.showModal();
+
+    setTimeout(() => {
+        if (dialog.open) {
+            dialog.close();
+        }
+    }, 5000);
+
+    clearBasket();
+
+}
+
+function closeDialog() {
+    document.getElementById("orderDialog").close();
+}
+
+function clearBasket() {
+    basket = [];
+    renderBasket();
+}

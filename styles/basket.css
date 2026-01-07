@@ -99,4 +99,42 @@
     color: white;
     border-radius: 60px;
     margin-top: 24px;
+    cursor: pointer;
+}
+
+#orderDialog {
+    background-color: rgb(54, 53, 52);
+    color: rgb(253, 234, 220);
+    border: none;
+    border-radius: 30px;
+    width: 350px;
+    height: 220px;
+}
+
+.dialog_image {
+    height: 60px;
+    width: 80px;
+}
+
+#closeDialogBtn {
+    background-color: transparent;
+    color: rgb(253, 234, 220);
+    align-self: flex-end;
+    border: none;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dialog_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.65);
 }
