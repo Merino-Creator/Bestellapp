@@ -37,6 +37,8 @@ function renderBasket() {
 
     let basketSum = document.getElementById('basketSummary');
     basketSum.classList.remove("d_none");
+
+    basketSummary();
 }
 
 function addMore(indexBasket) {
@@ -47,4 +49,15 @@ function addMore(indexBasket) {
 function removeFromBasket(indexBasket) {
     basket.splice(indexBasket, 1);
     renderBasket();
+}
+
+function basketSummary() {
+    let deliveryFee = 4.99;
+
+    let subtotal = basket.reduce((sum, item)=> sum + (item.price * item.amount), 0);
+
+    total = subtotal + deliveryFee;
+
+    document.getElementById('subtotalAmount').innerText = subtotal.toFixed(2) + '€';
+    document.getElementById('totalAmount').innerText = total.toFixed(2) + '€';
 }
