@@ -42,6 +42,13 @@
     margin-right: 8px;
 }
 
+#basket_item_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
 .amount_price_container {
     display: flex;
     justify-content: space-between;
@@ -102,6 +109,7 @@
     cursor: pointer;
 }
 
+/* Dialog */
 #orderDialog {
     background-color: rgb(54, 53, 52);
     color: rgb(253, 234, 220);

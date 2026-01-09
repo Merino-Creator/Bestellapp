@@ -56,17 +56,35 @@ function getSaladMenuTemplate(indexSalad) {
 }
 
 function getBasketItemTemplate(item, indexBasket) {
+    const isMultiple = item.amount >= 2;
+
     return `
         <div class="basket_item">
-            <div>
+            <div id="basket_item_header">
                 <h5>${item.name}</h5>
+
+                ${isMultiple ? `
+                    <button class="basket_button trash" onclick="removeFromBasket(${indexBasket})">
+                        <img src="/assets/icons/trashcan.png" alt="trash">
+                    </button>
+                ` : ''}
             </div>
+
             <div class="amount_price_container">
                 <div class="basket_quantity">
-                    <button class="basket_button" onclick="removeFromBasket(${indexBasket})"><img src="/assets/icons/trashcan.png" alt="small trashcan"></button>
+                    ${isMultiple ? `
+                        <button class="basket_button" onclick="decreaseAmount(${indexBasket})">−</button>
+                    ` : `
+                        <button class="basket_button" onclick="removeFromBasket(${indexBasket})">
+                            <img src="/assets/icons/trashcan.png" alt="trash">
+                        </button>
+                    `}
+
                     <h5>${item.amount}</h5>
+
                     <button class="basket_button" onclick="addMore(${indexBasket})">+</button>
                 </div>
+
                 <h5>${item.price.toFixed(2)}€</h5>
             </div>
         </div>

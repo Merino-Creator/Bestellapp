@@ -48,6 +48,13 @@ function addMore(indexBasket) {
     renderBasket();
 }
 
+function decreaseAmount(indexBasket) {
+    if (basket[indexBasket].amount > 1) {
+        basket[indexBasket].amount--;
+    }
+    renderBasket();
+}
+
 function removeFromBasket(indexBasket) {
     basket.splice(indexBasket, 1);
     renderBasket();
