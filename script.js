@@ -1,7 +1,9 @@
 function init() {
+    getFromLocalStorage();
     renderBurgerMenu();
     renderPizzaMenu();
     renderSaladMenu();
+    renderBasket();
 }
 
 function renderBurgerMenu() {

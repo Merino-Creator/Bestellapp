@@ -21,6 +21,7 @@ function addToCart(indexDish, category) {
         });
     }
 
+    saveToLocalStorage();
     renderBasket();
 }
 
@@ -45,6 +46,8 @@ function renderBasket() {
 
 function addMore(indexBasket) {
     basket[indexBasket].amount++;
+
+    saveToLocalStorage();
     renderBasket();
 }
 
@@ -52,11 +55,15 @@ function decreaseAmount(indexBasket) {
     if (basket[indexBasket].amount > 1) {
         basket[indexBasket].amount--;
     }
+
+    saveToLocalStorage();
     renderBasket();
 }
 
 function removeFromBasket(indexBasket) {
     basket.splice(indexBasket, 1);
+
+    saveToLocalStorage();
     renderBasket();
 }
 
@@ -93,5 +100,7 @@ function closeDialog() {
 
 function clearBasket() {
     basket = [];
+
+    localStorage.removeItem("basket");
     renderBasket();
 }
