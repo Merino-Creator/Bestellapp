@@ -23,6 +23,7 @@ header {
 
 /* Main */
 main {
+    width: 100%;
     display: flex;
     justify-content: center;
     flex: 1;
@@ -48,9 +49,10 @@ main {
 /* Top Section */
 #topSection {
     display: grid;
-    place-items: center;
-    align-items: flex-end;
+    height: 700px;
     margin-bottom: 60px;
+    align-items: start;
+    justify-items: stretch;
 }
 
 .hero_img {
@@ -58,10 +60,21 @@ main {
     grid-area: 1/1;
     width: 100%;
     height: 400px;
-    margin-bottom: 100px;
+    align-self: flex-start;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.content_wrapper_top {
+    display: grid;
+    grid-area: 1 / 1;
+    place-items: center;
+    max-width: 1920px;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    margin-top: 200px;
 }
 
 .restaurant_logo {

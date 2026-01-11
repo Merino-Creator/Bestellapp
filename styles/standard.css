@@ -8,15 +8,9 @@ body {
     overflow-y: auto;
 }
 
-.content_wrapper {
-    max-width: 1920px;
-    width: 100%;
+.content_grid {
     display: grid;
-}
-
-.full_page {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
+    width: 100%;
 }
 
 h1 {
