@@ -4,8 +4,6 @@ body {
     display: flex;
     flex-direction: column;
     font-family: palanquin;
-    overflow-x: hidden;
-    overflow-y: auto;
 }
 
 .content_grid {
