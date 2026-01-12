@@ -2,6 +2,7 @@ function getBurgerMenuTemplate(indexBurger) {
     let burger = dishes[0].burger[indexBurger];
 
     return `
+    <div class="menu_wrapper">
         <div class="dishes_container">
             <img class="menu_images" src="${burger.image}" alt="${burger.name}">
             <div class="dishes_content">
@@ -14,13 +15,15 @@ function getBurgerMenuTemplate(indexBurger) {
                     <button class="add_btn" onclick="addToCart(${indexBurger}, 'burger')">Add to basket</button>
                 </div>
             </div>
-        </div>`
+        </div>
+    </div>`
 }
 
 function getPizzaMenuTemplate(indexPizza) {
     let pizza = dishes[1].pizza[indexPizza]
 
     return `
+    <div class="menu_wrapper">
         <div class="dishes_container">
             <img class="menu_images" src="${pizza.image}" alt="${pizza.name}">
             <div class="dishes_content">
@@ -33,13 +36,15 @@ function getPizzaMenuTemplate(indexPizza) {
                     <button class="add_btn" onclick="addToCart(${indexPizza}, 'pizza')">Add to basket</button>
                 </div>
             </div>
-        </div>`
+        </div>
+    </div>`
 }
 
 function getSaladMenuTemplate(indexSalad) {
     let salad = dishes[2].salad[indexSalad]
 
     return `
+    <div class="menu_wrapper">
         <div class="dishes_container">
             <img class="menu_images" src="${salad.image}" alt="${salad.name}">
             <div class="dishes_content">
@@ -52,7 +57,8 @@ function getSaladMenuTemplate(indexSalad) {
                     <button class="add_btn" onclick="addToCart(${indexSalad}, 'salad')">Add to basket</button>
                 </div>
             </div>
-        </div>`
+        </div>
+    </div>`
 }
 
 function getBasketItemTemplate(item, indexBasket) {
