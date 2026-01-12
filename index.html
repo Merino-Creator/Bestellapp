@@ -30,19 +30,19 @@
     </header>
 
     <main>
-        <div class="content_grid">
-            <div id="pageContent">
-                <section id="topSection">
-                    <div class="hero_img"></div>
-                    <div class="content_wrapper_top">
-                        <div class="restaurant_logo"></div>
-                        <h1><span style="color: rgb(255, 115, 0);">Burger</span>House
-                            <img id="ratingImg" src="/assets/icons/Rating.png" alt="restaurant rating">
-                        </h1>
-                        <h4>The greatest Burgers, Pizzas and Salads just for you.</h4>
-                    </div>
-                </section>
+        <section id="topSection">
+            <div class="hero_img"></div>
+            <div class="content_wrapper_top">
+                <div class="restaurant_logo"></div>
+                <h1><span style="color: rgb(255, 115, 0);">Burger</span>House
+                    <img id="ratingImg" src="/assets/icons/Rating.png" alt="restaurant rating">
+                </h1>
+                <h4>The greatest Burgers, Pizzas and Salads just for you.</h4>
+            </div>
+        </section>
 
+        <div class="main_content">
+            <div id="pageContent">
                 <section id="menuPartOne">
                     <div class="menuline_full">
                         <div class="menuline_wrapper">
@@ -112,15 +112,16 @@
                     </div>
                 </section>
             </div>
-            <dialog id="orderDialog">
-                <div class="dialog_content">
-                    <button onclick="closeDialog()" id="closeDialogBtn">X</button>
-                    <img class="dialog_image" src="/assets/imgs/orderTruck.png" alt="">
-                    <p style="font-size: 42px;">Order confirmed!</p>
-                    <p style="font-size: 29px;">Your food is on the way!</p>
-                </div>
-            </dialog>
         </div>
+
+        <dialog id="orderDialog">
+            <div class="dialog_content">
+                <button onclick="closeDialog()" id="closeDialogBtn">X</button>
+                <img class="dialog_image" src="/assets/imgs/orderTruck.png" alt="">
+                <p style="font-size: 42px;">Order confirmed!</p>
+                <p style="font-size: 29px;">Your food is on the way!</p>
+            </div>
+        </dialog>
     </main>
 
     <footer>
