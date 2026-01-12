@@ -5,7 +5,7 @@
     gap: 80px;
     padding-top: 40px;
     border-radius: 24px 0 0 24px;
-    height: 800px;
+    height: 760px;
     width: 100%;
     text-align: center;
     display: flex;
@@ -21,13 +21,14 @@
 }
 
 #products {
-    max-height: 378px;
-    min-height: 50px;
+    max-height: 338px;
     width: 360px;
     display: flex;
     flex-direction: column;
     overflow: auto;
     gap: 8px;
+    margin-left: 24px;
+    margin-right: 24px;
 }
 
 .basket_item {
@@ -71,6 +72,7 @@
     width: 340px;
     text-align: start;
     color: white;
+    margin-bottom: 40px;
 }
 
 .sub_summary {
