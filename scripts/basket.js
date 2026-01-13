@@ -99,6 +99,7 @@ function sendOrder() {
     }, 5000);
 
     clearBasket();
+    deleteBasket();
 
 }
 
@@ -111,4 +112,12 @@ function clearBasket() {
 
     localStorage.removeItem("basket");
     renderBasket();
+}
+
+function deleteBasket() {
+    let basketRef = document.getElementById('basketContent');
+    
+    if (basket.length === 0) {
+        basketRef.remove('basketContent')
+    }
 }
