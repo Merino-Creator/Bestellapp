@@ -1,3 +1,20 @@
 @media (max-width: 1320px) {
+    .header_content {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .menuline_content {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .dishes_container {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 1120px) {
     
 }

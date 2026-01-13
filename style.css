@@ -96,8 +96,8 @@ main {
 
 .menuline_content {
     color: white;
-    margin-left: 160px;
-    margin-right: 160px;
+    margin-left: 120px;
+    margin-right: 120px;
     gap: 12px;
     height: 50px;
     display: flex;
@@ -122,10 +122,9 @@ main {
     background-color: rgb(253, 234, 220);
     height: 140px;
     max-width: 820px;
-    min-width: 640px;
     border-radius: 16px;
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 60px;
+    margin-right: 60px;
     display: flex;
     align-items: center;
     gap: 12px;
