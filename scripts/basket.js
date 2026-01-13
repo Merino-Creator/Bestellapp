@@ -30,18 +30,26 @@ function renderBasket() {
     basketRef.innerHTML = "";
 
     let isEmpty = basket.length === 0;
-    let basketImg = document.getElementById('basketImage');
-    let basketSum = document.getElementById('basketSummary');
 
     if (!isEmpty) {
         for (let indexBasket = 0; indexBasket < basket.length; indexBasket++) {
             basketRef.innerHTML += getBasketItemTemplate(basket[indexBasket], indexBasket);
         }
-        basketSummary();
+        basketSummary(); 
     }
+
+    emptyBasket();
+} 
+
+function emptyBasket() {
+    let isEmpty = basket.length === 0;
+    let basketImg = document.getElementById('basketImage');
+    let basketSum = document.getElementById('basketSummary');
+    let basketText = document.getElementById('basketText');
 
     basketImg.classList.toggle("d_none", !isEmpty);
     basketSum.classList.toggle("d_none", isEmpty);
+    basketText.classList.toggle("d_none", !isEmpty);
 }
 
 function addMore(indexBasket) {
@@ -70,7 +78,7 @@ function removeFromBasket(indexBasket) {
 function basketSummary() {
     let deliveryFee = 4.99;
 
-    let subtotal = basket.reduce((sum, item)=> sum + (item.price * item.amount), 0);
+    let subtotal = basket.reduce((sum, item) => sum + (item.price * item.amount), 0);
 
     let total = subtotal + deliveryFee;
 
