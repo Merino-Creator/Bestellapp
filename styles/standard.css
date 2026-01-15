@@ -40,6 +40,11 @@ p {
     line-height: 20px;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 button {
     padding: 0;
 }

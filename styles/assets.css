@@ -63,3 +63,17 @@
   background-color: rgb(253, 234, 220);
   border-radius: 8px;
 }
+
+/* Links */
+
+.link1 {
+  order: 1;
+}
+
+.link2 {
+  order: 2;
+}
+
+.link3 {
+  order: 3;
+}

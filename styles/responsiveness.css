@@ -126,4 +126,28 @@
     #basketContent {
         display: none;
     }
+
+    /* Footer */
+    footer {
+        height: 140px;
+    }
+
+    .footer_content {
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+    }
+
+    .link1 {
+        order: 3;
+    }
+
+    .link2 {
+        order: 1;
+    }
+
+    .link3 {
+        order: 2;
+    }
 }
