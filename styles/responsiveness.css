@@ -20,6 +20,7 @@
     }
 }
 
+/* Laptop */
 @media (max-width: 1120px) {
     h2 {
         font-size: 28px;
@@ -75,6 +76,54 @@
     }
 }
 
+/* Table & Mobile */
 @media (max-width: 800px) {
+    /* Header */
+    header {
+        height: 80px;
+    }
 
+    .header_content {
+        height: 80px;
+        justify-content: flex-start;
+        margin-left: 30px;
+    }
+
+    .burger_menu {
+        display: none;
+    }
+
+    /* Top Section */
+    h1 {
+        font-size: 40px;
+    }
+
+    .hero_img {
+        width: auto;
+        margin: 12px;
+        border-radius: 12px;
+    }
+
+    .restaurant_logo {
+        height: 150px;
+        width: 150px;
+    }
+
+    .top_headline {
+        text-align: center;
+        transform: translateY(-80px);
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .top_description {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+
+    /* Main */
+    #basketContent {
+        display: none;
+    }
 }

@@ -63,12 +63,17 @@ main {
     background-size: cover;
 }
 
-.top_description {
+.top_headline {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     transform: translateY(-100px);
+}
+
+.top_description {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .restaurant_logo {
