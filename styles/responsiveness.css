@@ -13,8 +13,68 @@
         margin-left: 30px;
         margin-right: 30px;
     }
+
+    .footer_content {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
 }
 
 @media (max-width: 1120px) {
-    
+    h2 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    h5 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .dishes_container {
+        height: 100px;
+        min-width: 140px;
+    }
+
+    .menu_images {
+        height: 80px;
+        width: 160px;
+    }
+
+    .dishes_content {
+        gap: 4px;
+    }
+
+    #basketContent {
+        width: 210px;
+    }
+
+    #products {
+        width: 180px;
+        margin-left: 8px;
+        margin-right: 8px;
+        gap: 4px;
+    }
+
+    #basketSummary {
+        width: 170px;
+    }
+
+    #buyButton {
+        width: 170px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 800px) {
+
 }
