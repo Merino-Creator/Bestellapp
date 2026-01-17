@@ -109,6 +109,10 @@ main {
     align-items: center;
 }
 
+.mobile_text {
+    display: none;
+}
+
 .menu_content {
     display: flex;
     flex-direction: column;
