@@ -23,6 +23,7 @@ function addToCart(indexDish, category) {
 
     saveToLocalStorage();
     renderBasket();
+    updateCartBadge();
 }
 
 function renderBasket() {
@@ -57,6 +58,7 @@ function addMore(indexBasket) {
 
     saveToLocalStorage();
     renderBasket();
+    updateCartBadge();
 }
 
 function decreaseAmount(indexBasket) {
@@ -66,6 +68,7 @@ function decreaseAmount(indexBasket) {
 
     saveToLocalStorage();
     renderBasket();
+    updateCartBadge();
 }
 
 function removeFromBasket(indexBasket) {
@@ -73,6 +76,7 @@ function removeFromBasket(indexBasket) {
 
     saveToLocalStorage();
     renderBasket();
+    updateCartBadge();
 }
 
 function basketSummary() {
@@ -112,6 +116,7 @@ function clearBasket() {
 
     localStorage.removeItem("basket");
     renderBasket();
+    updateCartBadge();
 }
 
 function deleteBasket() {
@@ -119,5 +124,23 @@ function deleteBasket() {
     
     if (basket.length === 0) {
         basketRef.remove('basketContent')
+    }
+}
+
+function getTotalBasketAmount() {
+    return basket.reduce((sum, item) => sum + item.amount, 0);
+}
+
+function updateCartBadge() {
+    let badge = document.getElementById('basketCount');
+    if (!badge) return;
+
+    let totalAmount = getTotalBasketAmount();
+
+    if (totalAmount > 0) {
+        badge.style.display = 'flex';
+        badge.innerText = totalAmount;
+    } else {
+        badge.style.display = 'none';
     }
 }

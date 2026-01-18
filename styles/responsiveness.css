@@ -78,6 +78,7 @@
 
 /* Table & Mobile */
 @media (max-width: 800px) {
+
     /* Header */
     header {
         height: 80px;
@@ -212,7 +213,7 @@
         height: 140px;
         display: flex;
         flex-direction: column;
-        justify-content: center;  
+        justify-content: center;
     }
 
     .link1 {
@@ -232,13 +233,35 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        background-color:  rgb(54, 53, 52);
+        background-color: rgb(54, 53, 52);
         height: 60px;
         position: sticky;
         bottom: 0;
     }
 
-    a img {
+    .navi_button {
+        border: none;
+    }
+
+    .navi_img {
+        background-color: rgb(54, 53, 52);
         display: block;
+        cursor: pointer;
+    }
+
+    .basket_badge {
+        position: absolute;
+        top: -5px;
+        right: -10px;
+        background: red;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        display: none;
+        align-items: center;
+        justify-content: center;
     }
 }
