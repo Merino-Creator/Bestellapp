@@ -124,7 +124,7 @@
     }
 
     /* Main */
-    .resp_menu_closed {
+    .resp_menu {
         display: none;
     }
 
@@ -262,5 +262,7 @@
     }
 
     /* Responsive Menu */
-    
+    .resp_menu {
+        
+    }
 }
