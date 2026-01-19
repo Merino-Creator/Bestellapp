@@ -42,7 +42,6 @@ main {
 }
 
 #basketContent {
-    display: flex;
     width: 420px;
 }
 

@@ -149,3 +149,8 @@ function updateCartBadge() {
 
     saveToLocalStorage();
 }
+
+function mobileBasket() {
+    let mobileBasketRef = document.getElementById('basketContent');
+    mobileBasketRef.classList.toggle('resp_menu_closed');
+}

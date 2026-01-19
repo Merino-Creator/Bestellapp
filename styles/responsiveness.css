@@ -124,7 +124,7 @@
     }
 
     /* Main */
-    #basketContent {
+    .resp_menu_closed {
         display: none;
     }
 
@@ -260,4 +260,7 @@
         align-items: center;
         justify-content: center;
     }
+
+    /* Responsive Menu */
+    
 }
