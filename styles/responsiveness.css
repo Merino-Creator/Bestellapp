@@ -240,22 +240,25 @@
         border: none;
         background-color: transparent;
         cursor: pointer;
+        position: relative;
+        display: inline-block;
     }
 
     .basket_badge {
         position: absolute;
-        top: 8px;
-        right: 85px;
+        top: 0;
+        right: 0;
+        transform: translate(50%, -50%);
         background: rgb(253, 234, 220);
         color: rgb(255, 115, 0);
         font-size: 12px;
-        font-weight: bold;
         width: 18px;
         height: 18px;
         border-radius: 50%;
-        display: none;
+        display: flex;
         align-items: center;
         justify-content: center;
+        pointer-events: none;
     }
 
     /* Responsive Menu */
