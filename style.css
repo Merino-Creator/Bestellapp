@@ -54,7 +54,7 @@ main {
 }
 
 .hero_img {
-    background-image: url(/assets/imgs/hero.png);
+    background-image: url(./assets/imgs/hero.png);
     width: 100%;
     height: 400px;
     background-position: center;
@@ -76,7 +76,7 @@ main {
 }
 
 .restaurant_logo {
-    background-image: url(/assets/imgs/restaurantLogo.png);
+    background-image: url(./assets/imgs/restaurantLogo.png);
     height: 200px;
     width: 200px;
     background-position: center;

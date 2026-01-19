@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bestellapp</title>
-    <link rel="icon" type="image/x-icon" href="/assets/imgs/mainLogo.png">
+    <link rel="icon" type="image/x-icon" href="./assets/imgs/mainLogo.png">
 
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/styles/standard.css">
-    <link rel="stylesheet" href="/styles/assets.css">
-    <link rel="stylesheet" href="/styles/basket.css">
-    <link rel="stylesheet" href="/styles/responsiveness.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/standard.css">
+    <link rel="stylesheet" href="./styles/assets.css">
+    <link rel="stylesheet" href="./styles/basket.css">
+    <link rel="stylesheet" href="./styles/responsiveness.css">
 </head>
 
 <body onload="init()">
@@ -19,7 +19,7 @@
     <header>
         <div class="header_wrapper">
             <div class="header_content">
-                <div><img src="/assets/imgs/mainLogo.png" alt="Bestellapp Logo"></div>
+                <div><img src="./assets/imgs/mainLogo.png" alt="Bestellapp Logo"></div>
                 <div class="burger_menu" onclick="toggleMenu(this)">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
@@ -36,7 +36,7 @@
                 <div class="restaurant_logo"></div>
                 <div class="top_description">
                     <h1><span style="color: rgb(255, 115, 0);">Burger</span>House</h1>
-                    <img id="ratingImg" src="/assets/icons/Rating.png" alt="restaurant rating">
+                    <img id="ratingImg" src="./assets/icons/Rating.png" alt="restaurant rating">
                 </div>
                 <h4>The best of Burgers, Pizza and Greens all in one great place.</h4>
             </div>
@@ -48,7 +48,7 @@
                     <div class="menuline_full">
                         <div class="menuline_wrapper">
                             <div class="menuline_content">
-                                <img class="menu_icon" src="/assets/imgs/smallBurger.png" alt="small burger picture">
+                                <img class="menu_icon" src="./assets/imgs/smallBurger.png" alt="small burger picture">
                                 <h2 class="pc_text">Burger & Sandwiches</h2>
                                 <h2 class="mobile_text">Burger</h2>
                             </div>
@@ -62,7 +62,7 @@
                     <div class="menuline_full">
                         <div class="menuline_wrapper">
                             <div class="menuline_content">
-                                <img id="burgerText" class="menu_icon" src="/assets/imgs/smallPizza.png"
+                                <img id="burgerText" class="menu_icon" src="./assets/imgs/smallPizza.png"
                                     alt="small pizza picture">
                                 <h2>Pizza (30cm)</h2>
                             </div>
@@ -76,7 +76,7 @@
                     <div class="menuline_full">
                         <div class="menuline_wrapper">
                             <div class="menuline_content">
-                                <img class="menu_icon" src="/assets/imgs/smallSalad.png" alt="small salad picture">
+                                <img class="menu_icon" src="./assets/imgs/smallSalad.png" alt="small salad picture">
                                 <h2>Salad</h2>
                             </div>
                         </div>
@@ -96,7 +96,7 @@
                         Go ahead and choose something delicious!
                     </p>
                     <div id="products"></div>
-                    <img id="basketImage" class="basket_img" src="/assets/imgs/shopping_cart.png" alt="">
+                    <img id="basketImage" class="basket_img" src="./assets/imgs/shopping_cart.png" alt="">
                     <div id="basketSummary" class="d_none">
                         <div class="sub_summary">
                             <div>
@@ -122,7 +122,7 @@
         <dialog id="orderDialog">
             <div class="dialog_content">
                 <button onclick="closeDialog()" id="closeDialogBtn">X</button>
-                <img class="dialog_image" src="/assets/imgs/orderTruck.png" alt="">
+                <img class="dialog_image" src="./assets/imgs/orderTruck.png" alt="">
                 <p style="font-size: 42px;">Order confirmed!</p>
                 <p style="font-size: 29px;">Your food is on the way!</p>
             </div>
@@ -140,9 +140,9 @@
     </footer>
 
     <nav>
-        <button class="navi_button"><img class="navi_img" src="/assets/icons/homeBtnMobile.png" alt=""></button>
-        <button class="navi_button"><img class="navi_img" src="/assets/icons/profileBtnMobile.png" alt=""></button>
-        <button class="navi_button"><img class="navi_img" src="/assets/icons/ordersBtnMobile.png" alt=""></button>
+        <button class="navi_button"><img class="navi_img" src="./assets/icons/homeBtnMobile.png" alt=""></button>
+        <button class="navi_button"><img class="navi_img" src="./assets/icons/profileBtnMobile.png" alt=""></button>
+        <button class="navi_button"><img class="navi_img" src="./assets/icons/ordersBtnMobile.png" alt=""></button>
         <button class="navi_button" onclick="mobileBasket()">
             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path id="cartBtn"
@@ -154,10 +154,10 @@
 
 </body>
 
-<script src="/scripts/db.js"></script>
-<script src="/scripts/template.js"></script>
-<script src="/scripts/basket.js"></script>
-<script src="/scripts/storage.js"></script>
-<script src="/script.js"></script>
+<script src="./scripts/db.js"></script>
+<script src="./scripts/template.js"></script>
+<script src="./scripts/basket.js"></script>
+<script src="./scripts/storage.js"></script>
+<script src="./script.js"></script>
 
 </html>
