@@ -4,6 +4,7 @@ function init() {
     renderPizzaMenu();
     renderSaladMenu();
     renderBasket();
+    updateCartBadge();
 }
 
 function renderBurgerMenu() {

@@ -133,6 +133,8 @@ function getTotalBasketAmount() {
 
 function updateCartBadge() {
     let badge = document.getElementById('basketCount');
+    let cart = document.getElementById('cartBtn');
+
     if (!badge) return;
 
     let totalAmount = getTotalBasketAmount();
@@ -140,7 +142,10 @@ function updateCartBadge() {
     if (totalAmount > 0) {
         badge.style.display = 'flex';
         badge.innerText = totalAmount;
+        cart.style.fill = 'rgb(255, 115, 0)';
     } else {
         badge.style.display = 'none';
     }
+
+    saveToLocalStorage();
 }
