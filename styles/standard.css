@@ -3,7 +3,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    font-family: 'palanquin', sans-serif;
+    font-family: Palanquin, sans-serif;
 }
 
 h1 {
