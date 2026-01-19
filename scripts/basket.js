@@ -121,9 +121,11 @@ function clearBasket() {
 
 function deleteBasket() {
     let basketRef = document.getElementById('basketContent');
+    let overlayRef = document.getElementById('basketOverlay');
     
     if (basket.length === 0) {
         basketRef.remove('basketContent')
+        overlayRef.remove('basketOverlay')
     }
 }
 
@@ -152,5 +154,8 @@ function updateCartBadge() {
 
 function mobileBasket() {
     let mobileBasketRef = document.getElementById('basketContent');
+    let basketOverlayRef = document.getElementById('basketOverlay');
+
     mobileBasketRef.classList.toggle('open');
+    basketOverlayRef.classList.toggle('active');
 }
