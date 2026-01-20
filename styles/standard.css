@@ -6,6 +6,13 @@ body {
     font-family: 'Palanquin', sans-serif;
 }
 
+/* Font */
+@font-face {
+  font-family: 'Palanquin';
+  src: url("/assets/fonts/Palanquin/Palanquin-Regular.ttf");
+}
+
+
 h1 {
     margin: 0;
     font-size: 48px;
