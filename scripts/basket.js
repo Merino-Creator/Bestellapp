@@ -36,11 +36,11 @@ function renderBasket() {
         for (let indexBasket = 0; indexBasket < basket.length; indexBasket++) {
             basketRef.innerHTML += getBasketItemTemplate(basket[indexBasket], indexBasket);
         }
-        basketSummary(); 
+        basketSummary();
     }
 
     emptyBasket();
-} 
+}
 
 function emptyBasket() {
     let isEmpty = basket.length === 0;
@@ -122,7 +122,7 @@ function clearBasket() {
 function deleteBasket() {
     let basketRef = document.getElementById('basketContent');
     let overlayRef = document.getElementById('basketOverlay');
-    
+
     if (basket.length === 0) {
         basketRef.remove('basketContent')
         overlayRef.remove('basketOverlay')
