@@ -1,42 +1,20 @@
 function init() {
     getFromLocalStorage();
-    renderBurgerMenu();
-    renderPizzaMenu();
-    renderSaladMenu();
+    renderMenu('burger', 'burgerMenu');
+    renderMenu('pizza', 'pizzaMenu');
+    renderMenu('salad', 'saladMenu');
     renderBasket();
     updateCartBadge();
 }
 
-function renderBurgerMenu() {
-    let contentRef = document.getElementById('burgerMenu')
+function renderMenu(type, containerId) {
+    let contentRef = document.getElementById(containerId)
     contentRef.innerHTML = "";
 
-    let burgers = dishes[0].burger;
+    let items = dishMap[type];
 
-    for (let indexBurger = 0; indexBurger < burgers.length; indexBurger++) {
-        contentRef.innerHTML += getBurgerMenuTemplate(indexBurger);
-    }
-}
-
-function renderPizzaMenu() {
-    let contentRef = document.getElementById('pizzaMenu')
-    contentRef.innerHTML = "";
-
-    let pizzas = dishes[1].pizza;
-
-    for (let indexPizza = 0; indexPizza < pizzas.length; indexPizza++) {
-        contentRef.innerHTML += getPizzaMenuTemplate(indexPizza);
-    }
-}
-
-function renderSaladMenu() {
-    let contentRef = document.getElementById('saladMenu')
-    contentRef.innerHTML = "";
-
-    let salads = dishes[2].salad;
-
-    for (let indexSalad = 0; indexSalad < salads.length; indexSalad++) {
-        contentRef.innerHTML += getSaladMenuTemplate(indexSalad);
+    for (let i = 0; i < items.length; i++) {
+        contentRef.innerHTML += getMenuTemplate(type, i);
     }
 }
 
