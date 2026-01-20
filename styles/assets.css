@@ -47,7 +47,6 @@
 }
 
 /* Scrollbar */
-
 #products::-webkit-scrollbar {
   width: 8px;
   background-color: transparent;
@@ -59,7 +58,6 @@
 }
 
 /* Links */
-
 .link1 {
   order: 1;
 }
@@ -70,4 +68,13 @@
 
 .link3 {
   order: 3;
+}
+
+/* Dialog */
+.dialog_headline {
+  font-size: 42px;
+}
+
+.dialog_text {
+  font-size: 28px;
 }
