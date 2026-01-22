@@ -156,6 +156,8 @@ function mobileBasket() {
     let mobileBasketRef = document.getElementById('basketContent');
     let basketOverlayRef = document.getElementById('basketOverlay');
 
-    mobileBasketRef.classList.toggle('open');
-    basketOverlayRef.classList.toggle('active');
+    let isOpen = mobileBasketRef.classList.toggle('open');
+    basketOverlayRef.classList.toggle('active', isOpen);
+
+    document.body.classList.toggle('no-scroll', isOpen);
 }

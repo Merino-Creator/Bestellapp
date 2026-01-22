@@ -333,4 +333,8 @@
     .dialog_text {
         font-size: 18px;
     }
+
+    body.no-scroll {
+        overflow: hidden;
+    }
 }
